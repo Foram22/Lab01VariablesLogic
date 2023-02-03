@@ -20,7 +20,7 @@ fun main() {
 		
 		when(sourceUnit){
 		
-			// 'Second' to other units
+			// Convert 'Second' to other units
 			(1) -> {
 				val destUnits = listOf("Minute", "Hour", "Day", "Week", "Month", "Year")
 				val destNum = getDestinationUnit(destUnits)
@@ -28,7 +28,7 @@ fun main() {
 				showResult("Second", destUnits[destNum-1], enteredNumber, enteredNumber * conversionValues[destNum-1])
 			}
 			
-			// 'Minute' to other units
+			// Convert 'Minute' to other units
 			(2) -> {
 				val destUnits = listOf("Second", "Hour", "Day", "Week", "Month", "Year")
 				val destNum = getDestinationUnit(destUnits)
@@ -36,7 +36,7 @@ fun main() {
 				showResult("Minute", destUnits[destNum-1], enteredNumber, enteredNumber * conversionValues[destNum-1])
 			}
 			
-			// 'Hour' to other units
+			// Convert 'Hour' to other units
 			(3) -> {
 				val destUnits = listOf("Second", "Minute", "Day", "Week", "Month", "Year")
 				val destNum = getDestinationUnit(destUnits)
@@ -44,7 +44,7 @@ fun main() {
 				showResult("Hour", destUnits[destNum-1], enteredNumber, enteredNumber * conversionValues[destNum-1])
 			}
 			
-			// 'Day' to other units
+			// Convert 'Day' to other units
 			(4) -> {
 				val destUnits = listOf("Second", "Minute", "Hour", "Week", "Month", "Year")
 				val destNum = getDestinationUnit(destUnits)
@@ -52,7 +52,7 @@ fun main() {
 				showResult("Day", destUnits[destNum-1], enteredNumber, enteredNumber * conversionValues[destNum-1])
 			}
 			
-			// 'Week' to other units
+			// Convert 'Week' to other units
 			(5) -> {
 				val destUnits = listOf("Second", "Minute", "Hour", "Day", "Month", "Year")
 				val destNum = getDestinationUnit(destUnits)
@@ -60,7 +60,7 @@ fun main() {
 				showResult("Week", destUnits[destNum-1], enteredNumber, enteredNumber * conversionValues[destNum-1])
 			}
 			
-			// 'Month' to other units
+			// Convert 'Month' to other units
 			(6) -> {
 				val destUnits = listOf("Second", "Minute", "Hour", "Day", "Week", "Year")
 				val destNum = getDestinationUnit(destUnits)
@@ -89,6 +89,7 @@ fun getDestinationUnit(units: List<String>): Int {
 	return destUnit			// return selected destination unit 
 }
 
+// function to show calculated result
 fun showResult(sourceUnit: String, destUnit: String, number: Double, result: Double){
 	println("\n$number $sourceUnit = $result $destUnit")
 }
