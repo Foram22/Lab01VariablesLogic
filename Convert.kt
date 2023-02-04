@@ -1,6 +1,6 @@
 // Foramben Jayeshkumar Patel
 // Student ID:-  A00272251
-// Mobile Application Development (January 2023)
+// This program get value from the user and then that value will be convert from one time measurement unit to another one.
 
 fun main() {
 
